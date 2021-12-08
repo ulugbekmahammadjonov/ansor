@@ -1,4 +1,4 @@
-/* GLOBAL */
+ /* GLOBAL */
 
 *{
     box-sizing: border-box;
@@ -16,10 +16,7 @@ body{
     line-height: 24px;
     color: #444444;
 }
-.site-header{
-    padding-top: 24px;
-    padding-bottom: 24px;
-}
+
 .container{
     max-width: 1160px;
     width: 100%;
@@ -28,21 +25,28 @@ body{
     padding-left: 30px;
     padding-right: 30px;
 }
+
+.site-header{
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
 .site-header-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .site-logo {
     display: flex;
     align-items: center;
     text-decoration: none;
 }
+
 .site-logo-img{
-    
     margin-right: 16px;
-    border-radius: 50%;
 }
+
 .site-logo-text{
     font-weight: 600;
     font-size: 24px;
@@ -77,7 +81,7 @@ body{
     color: #DE2E54;
 }
 .sitenav-link:active{
-    opacity: 0.6;
+    opacity: 0.8;
 }
 .main-link {
     padding: 12px 24px;
@@ -109,16 +113,15 @@ body{
 }
 .hero-container {
     display: flex;
-    
     justify-content: space-between;
 
 }
 .hero-content{
     width: 500px;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
-.hero-title{
+.hero-header{
     margin-top: 0;
     font-family: "Open Sans Condensed", sans-serif ;
     font-weight: 700;
@@ -148,7 +151,7 @@ body{
     margin-right: auto;
     margin-left: auto;
 }
-.servisce-heading{
+.index-servisces-heading{
     text-align: center;
     font-size: 36px;
     color: #000;
@@ -258,12 +261,12 @@ body{
     align-items: center;
     justify-content: space-between;
 }
-.site-logo-text-footer{
+.site-footer-logo-text{
     color: #fff;
 }
-.site-logo-text-footer:active{
+.site-footer-logo-text:active{
      color: #fff;
-     opacity: 0.6;
+     opacity: 0.8;
 
 }
 .sitenav-list-footer .sitenav-link {
@@ -274,5 +277,5 @@ body{
 }
 .sitenav-list-footer .sitenav-link:active{
     color: #fff;
-    opacity: 0.6;
+    opacity: 0.8;
 }

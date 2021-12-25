@@ -7,14 +7,21 @@
     outline: 2px dotted #DE2E54;
     outline-offset: 2px;
 }
+html{
+    height: 100%;
+}
 body{
+    height: 100%;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    font-weight: 400px;
-    line-height: 24px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
     color: #444444;
+}
+a{
+    transition: 0.2s all ease-in-out;
 }
 
 .container{
@@ -22,13 +29,18 @@ body{
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
 }
 
 .site-header{
-    padding-top: 24px;
-    padding-bottom: 24px;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    background:#fff;
+    width: 100%;
+    padding-top:1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 .site-header-container {
@@ -44,17 +56,17 @@ body{
 }
 
 .site-logo-img{
-    margin-right: 16px;
+    margin-right: 1rem;
 }
 
 .site-logo-text{
     font-weight: 600;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #222222;
 }
 .site-logo-text:hover{
     color: #DE2E54;
-}
+} 
 .site-logo:active{
     opacity: 0.6;
 }
@@ -67,12 +79,12 @@ body{
     margin: 0;
 }
 .sitenav-item:not(:last-child) {
-    margin-right: 32px;
+    margin-right: 2rem;
 }
 .sitenav-link {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 0.875rem;/*14/16=0.87rem*/
     font-weight: 700;
     letter-spacing: 2px;
     color: #222;
@@ -84,9 +96,9 @@ body{
     opacity: 0.8;
 }
 .main-link {
-    padding: 12px 24px;
+    padding: 0.75rem 1.5rem;/*0.75 1.5*/
     font-family: "Open Sans Condensed" , sans-serif;
-    font-size: 15px;
+    font-size: 0.94rem;/* 15/16*/
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #fff;
@@ -105,9 +117,13 @@ body{
     color: #fff;
     opacity: 0.6;
 }
+.icon{
+    display: none;
+}
 /* MAIN */
 /* hero */
 .hero{
+    margin-top: 98.5px;
     background: #0EB4C1;
     color: #fff;
 }
@@ -118,22 +134,22 @@ body{
 }
 .hero-content{
     width: 500px;
-    margin-top: 120px;
-    margin-bottom: 120px;
+    margin-top:7.5rem;
+    margin-bottom: 7.5rem;
 }
 .hero-header{
     margin-top: 0;
     font-family: "Open Sans Condensed", sans-serif ;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
-    margin-bottom: 16px;
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+    margin-bottom: 1rem;
 }
 .hero-text {
     width: 440px;
-    font-size: 18px;
-    line-height: 27px;
-    margin-bottom: 36px;
+    font-size: 1.125rem;
+    line-height: 1.7rem;/*27/16*/
+    margin-bottom: 2.25rem;
 
 }
 .hero-img{
@@ -153,37 +169,37 @@ body{
 }
 .index-servisces-heading{
     text-align: center;
-    font-size: 36px;
+    font-size: 2.25rem;
     color: #000;
-    line-height: 43px;
+    line-height: 2.7rem;
     font-weight: 700;
     font-family: 'Open Sans Condensed', sans-serif;
-    margin-top: 120px;
-    margin-bottom: 56px;
+    margin-top: 7.5rem;
+    margin-bottom: 3.5rem;
 }
 .service-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
 }
 .service-text{
-    margin-left:64px;
+    margin-left:4rem;
 }
 .service-title{
     margin: 0;
-    margin-bottom: 24px;
-    font-size: 24px;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
     font-family: "Open Sans Condensed", sans-serif;
     font-weight: 700;
     color: #222;
-    line-height: 29px;
+    
 }
 .service-info{
     margin: 0;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
 
 }
 .main-link-service {
@@ -193,17 +209,17 @@ body{
 }
 .promo {
     background: #0EB4C1;
-    margin-top: 120px;
+    margin-top: 7.5rem;
   
 }
 .promo-heading {
-    padding-top: 64px;
+    padding-top: 4rem;
     text-align: center;
     color: #fff;
     font-family:"Open Sans Condensed", sans-serif;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 43px;
+    font-size: 2.25rem;
+    line-height: 2.7rem;
 }
 .promo__items{
     display: flex;;
@@ -215,8 +231,8 @@ body{
 .promo__item {
     list-style: none;
     border: 2px solid #fff;
-    margin:30px 30px 76px;
-    padding: 9px 30px;
+    margin:1.9rem 1.9rem 4.75rem;
+    padding: 0.7rem 1.9rem;
     border-radius: 8px ;
 
     
@@ -224,7 +240,7 @@ body{
 .promo-link {
     width: 166px;
     top: 12px;
-    font-size: 15px;
+    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
@@ -253,8 +269,8 @@ body{
 .site-footer  {
     margin-top: 0;
     background: #222;
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 .site-footer-container{
     display: flex;
@@ -278,4 +294,176 @@ body{
 .sitenav-list-footer .sitenav-link:active{
     color: #fff;
     opacity: 0.8;
+}
+
+.hidden{
+    display: none;
+}
+
+.overlay{
+    position: fixed;
+    z-index: 2;
+    top: 98.5px;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* RESPONSIVE */
+@media only screen and (max-width:991px){
+    .container{
+        width: 95%;
+    }
+    .icon{
+        display: block;
+    }
+    
+    .sitenav-list{
+        position: absolute;
+        z-index: 3;
+        top: 98.5px;
+        background: rgb(131, 110, 110);
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 3rem 6rem;
+        transition: all 0.7s;
+    }
+    .active {
+        left: 0;
+     }
+    
+    .sitenav-item:not(:last-child) {
+        margin-right: 0rem;
+    }
+    .sitenav-item{
+        margin-bottom: 20px;
+        font-size: 3rem;
+    }
+    .sitenav-link{
+        color: #333;
+        margin: 0;
+    }
+    .main-link{
+        display: none;
+    }
+    .hero-img{
+        display: none;
+    }
+    .hero-content{
+        width: 100%;
+    }
+    .hero-header{
+        width: 100%;
+    }
+    .hero-text{
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .site-footer-logo{
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width:767px){
+    .container{
+        width: 92%;
+    }
+    .site-logo-text{
+        font-weight: 500;
+        font-size: 1.2rem;
+       
+    }
+    .sitenav-item{
+        margin-bottom: 1.25rem;
+        font-size: 2.5rem;
+    }
+    .sitenav-list{
+        padding: 1.9rem 2.8rem;
+    }
+    
+    .main-link-hero{
+        display: none;
+    }
+    
+    /* SERVISE */
+    .service-container{
+        width: 92%;
+    }
+    .index-servisces-heading{
+        font-size: 1.9rem;
+    }
+    .service-img img{
+        width: 150px;
+        height: 150px;
+    }
+    .service-text{
+        margin-left:2rem;
+    }
+    .service-title{
+        text-align: center;
+        font-size: 1.25rem;
+        margin-bottom: 0rem;
+    }
+    .service-info{
+        font-size: 0.8rem;
+        line-height: 1rem;
+    }
+    .service-title{
+        text-align: center;
+    }
+    .service-item {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3rem;
+    }
+    /* promo */
+
+    .promo-heading{
+        font-size: 1.75rem;
+    }
+    .promo__item {
+        
+        border: 1px solid #fff;
+        margin:1.5rem 1.5rem 4rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 8px ;
+    
+        
+    }
+    
+}
+@media only screen and (max-width:360px){
+    .promo__items{
+        display: flex;;
+        flex-direction: column;
+       
+    }
+    .sitenav-list{
+        position: absolute;
+        z-index: 3;
+        top: 98.5px;
+        background: rgb(131, 110, 110);
+        left: -100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.6rem 1,2rem;
+        transition: all 0.7s;
+    }
+    .active {
+        left: 0;
+     }
+     .sitenav-item{
+        margin-bottom: 1rem;
+        font-size: 2rem;
+    }
+    
 }

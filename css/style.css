@@ -325,7 +325,7 @@ a{
         position: absolute;
         z-index: 3;
         top: 98.5px;
-        background: rgb(131, 110, 110);
+        background: rgb(143, 161, 168);
         left: -100%;
         display: flex;
         flex-direction: column;
@@ -376,8 +376,8 @@ a{
         width: 92%;
     }
     .site-logo-text{
-        font-weight: 500;
-        font-size: 1.2rem;
+        font-weight: 600;
+        font-size: 1.5rem;
        
     }
     .sitenav-item{
@@ -397,16 +397,25 @@ a{
         width: 92%;
     }
     .index-servisces-heading{
-        font-size: 1.9rem;
+        font-size: 3rem;
+       
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
     .service-img img{
         width: 150px;
         height: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .service-text{
         margin-left:2rem;
+        margin-left: auto;
+        margin-right: auto;
     }
     .service-title{
+        width: 100%;
         text-align: center;
         font-size: 1.25rem;
         margin-bottom: 0rem;
@@ -449,7 +458,7 @@ a{
         position: absolute;
         z-index: 3;
         top: 98.5px;
-        background: rgb(131, 110, 110);
+        background: rgb(41, 149, 192);
         left: -100%;
         display: flex;
         flex-direction: column;
